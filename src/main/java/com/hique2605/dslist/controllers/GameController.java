@@ -3,6 +3,7 @@ package com.hique2605.dslist.controllers;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -12,6 +13,7 @@ import com.hique2605.dslist.dto.GameDTO;
 import com.hique2605.dslist.dto.GameMinDTO;
 import com.hique2605.dslist.services.GameService;
 
+@CrossOrigin(origins = "*")
 @RestController
 @RequestMapping(value = "/games")
 public class GameController	{
