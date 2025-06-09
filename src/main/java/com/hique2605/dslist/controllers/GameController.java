@@ -13,7 +13,6 @@ import com.hique2605.dslist.dto.GameDTO;
 import com.hique2605.dslist.dto.GameMinDTO;
 import com.hique2605.dslist.services.GameService;
 
-@CrossOrigin(origins = "*")
 @RestController
 @RequestMapping(value = "/games")
 public class GameController	{
